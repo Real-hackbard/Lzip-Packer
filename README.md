@@ -96,7 +96,7 @@ Download
 Description		Download		Size		Last change		Md5sum  
 • Complete package, except sources	 	[Setup](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-setup.exe/download?use_mirror=deac-fra&download)	 	815096	 	15 October 2007	 	: ff19a6203e8111bedff29c3bc150eaf1  
 • Sources	 	[Setup](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-src-setup.exe/download?use_mirror=master&download)	 	684179	 	15 October 2007	 	: 71feb720f926cf9f231606ac34dea344  
-• Binaries	 	Zip	 	135350	 	15 October 2007	 	: b24802293f74ab11aaa5786f36c59819  
-• Documentation	 	Zip	 	461664	 	23 June 2007	 	: aa7564e3619ae00cea9197f562a444b8  
-• Sources	 	Zip	 	717550	 	15 October 2007	 	: 7c692445c3ed191d5807f19764144be0  
+• Binaries	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-bin.zip/download?use_mirror=altushost-net&download)	 	135350	 	15 October 2007	 	: b24802293f74ab11aaa5786f36c59819  
+• Documentation	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-doc.zip/download?use_mirror=master&download)	 	461664	 	23 June 2007	 	: aa7564e3619ae00cea9197f562a444b8  
+• Sources	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-src.zip/download?use_mirror=excellmedia&download)	 	717550	 	15 October 2007	 	: 7c692445c3ed191d5807f19764144be0  
 • Original source		http://ftp.gnu.org/gnu/gzip/gzip-1.3.12.tar.gz
