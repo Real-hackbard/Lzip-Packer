@@ -18,7 +18,30 @@ The file that is produced by lzip is usually given .lz as its filename extension
 
 The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is being distributed as free software under the terms of version 2 or later of the [GNU General Public License (GPL)](https://en.wikipedia.org/wiki/GNU_General_Public_License).
 
+</br>
 
+<img width="629" height="511" alt="Lzip" src="https://github.com/user-attachments/assets/0fb8634b-04a4-451d-92af-5f3540549771" />
+
+</br>
+</br>
+
+# Lzip
+
+The functions and variables forming the interface of the compression library are declared in the file 'lzlib.h'. Usage examples of the library are given in the files 'bbexample.c', 'ffexample.c', and 'minilzip.c' from the source distribution.
+
+All the library functions are thread safe. The library does not install any signal handler. The decoder checks the consistency of the compressed data, so the library should never crash even in case of corrupted input.
+
+Compression/decompression is done by repeatedly calling a couple of read/write functions until all the data have been processed by the library. This interface is safer and less error prone than the traditional zlib interface.
+
+Compression/decompression is done when the read function is called. This means the value returned by the position functions is not updated until a read call, even if a lot of data are written. If you want the data to be compressed in advance, just call the read function with a size equal to 0.
+
+If all the data to be compressed are written in advance, lzlib automatically adjusts the header of the compressed data to use the largest dictionary size that does not exceed neither the data size nor the limit given to 'LZ_compress_open'. This feature reduces the amount of memory needed for decompression and allows minilzip to produce identical compressed output as lzip.
+
+Lzlib correctly decompresses a data stream which is the concatenation of two or more compressed data streams. The result is the concatenation of the corresponding decompressed data streams. Integrity testing of concatenated compressed data streams is also supported.
+
+Lzlib is able to compress and decompress streams of unlimited size by automatically creating multimember output. The members so created are large, about 2 PiB each.
+
+The latest released version of lzlib can be found at [here](https://download.savannah.nongnu.org/releases/lzip/lzlib/) You may also subscribe to lzip-bug and receive an email every time a new version is released.
 
 
 
