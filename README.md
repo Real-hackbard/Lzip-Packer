@@ -60,3 +60,4 @@ When decompressing, plzip decompresses as many members simultaneously as worker 
 
 In this [plzip benchmark page](https://www.nongnu.org/lzip/plzip_benchmark.html) you can find some tests showing the performance of plzip on a multiprocessor machine.
 
+The latest released version of plzip can be found [here](https://download.savannah.nongnu.org/releases/lzip/plzip/) Plzip requires lzlib to build. Lzlib is available at [http://www.nongnu.org/lzip/lzlib.html.](https://www.nongnu.org/lzip/lzlib.html) You may also subscribe to lzip-bug and receive an email every time a new version is released.
