@@ -35,41 +35,52 @@ Example 1: Extract all the files from archive foo.tar.lz.
        tar -xf foo.tar.lz
      or
        lzip -cd foo.tar.lz | tar -xf -
+
 Example 2: Replace a regular file with its compressed version file.lz and show the compression ratio.
 
      lzip -v file
+
 Example 3: Like example 2 but the created file.lz is multimember with a member size of 1 MiB. The compression ratio is not shown.
 
      lzip -b 1MiB file
+
 Example 4: Restore a regular file from its compressed version file.lz. If the operation is successful, file.lz is removed.
 
      lzip -d file.lz
+
 Example 5: Check the integrity of the compressed file file.lz and show status.
 
      lzip -tv file.lz
+
 Example 6: The right way of concatenating the decompressed output of two or more compressed files. See Trailing data.
 
      Don't do this
        cat file1.lz file2.lz file3.lz | lzip -d -
      Do this instead
        lzip -cd file1.lz file2.lz file3.lz
+
 Example 7: Decompress file.lz partially until 10 KiB of decompressed data are produced.
 
      lzip -cd file.lz | dd bs=1024 count=10
+
 Example 8: Decompress file.lz partially from decompressed byte at offset 10_000 to decompressed byte at offset 14_999 (5000 bytes are produced).
 
      lzip -cd file.lz | dd bs=1000 skip=10 count=5
+
 Example 9: Compress a whole device in /dev/sdc and send the output to file.lz.
 
        lzip -c /dev/sdc > file.lz
      or
        lzip /dev/sdc -o file.lz
+
 Example 10: Create a multivolume compressed tar archive with a volume size of 1440 KiB.
 
      tar -c some_directory | lzip -S 1440KiB -o volume_name -
+
 Example 11: Extract a multivolume compressed tar archive.
 
      lzip -cd volume_name*.lz | tar -xf -
+
 Example 12: Create a multivolume compressed backup of a large database file with a volume size of 650 MB, where each volume is a multimember file with a member size of 32 MiB.
 
      lzip -b 32MiB -S 650MB big_db
