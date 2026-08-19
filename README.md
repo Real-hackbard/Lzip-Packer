@@ -41,7 +41,7 @@ Lzlib correctly decompresses a data stream which is the concatenation of two or 
 
 Lzlib is able to compress and decompress streams of unlimited size by automatically creating multimember output. The members so created are large, about 2 PiB each.
 
-The latest released version of lzlib can be found at [here](https://download.savannah.nongnu.org/releases/lzip/lzlib/) You may also subscribe to lzip-bug and receive an email every time a new version is released.
+The latest released version of lzlib can be found [here](https://download.savannah.nongnu.org/releases/lzip/lzlib/) You may also subscribe to lzip-bug and receive an email every time a new version is released.
 
 
 
