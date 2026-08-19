@@ -43,5 +43,20 @@ Lzlib is able to compress and decompress streams of unlimited size by automatica
 
 The latest released version of lzlib can be found [here](https://download.savannah.nongnu.org/releases/lzip/lzlib/) You may also subscribe to lzip-bug and receive an email every time a new version is released.
 
+</br>
 
+# PLzip
+Plzip is a massively parallel (multithreaded) implementation of lzip. Plzip uses the compression library lzlib.
+
+Lzip is a lossless data compressor with a user interface similar to the one of gzip or bzip2. Lzip uses a simplified form of LZMA (Lempel-Ziv-Markov chain-Algorithm) and is designed to achieve complete interoperability between implementations. The maximum dictionary size is 512 MiB so that any lzip file can be decompressed on 32-bit machines. Lzip provides accurate and robust 3-factor integrity checking. 'lzip -0' compresses about as fast as gzip, while 'lzip -9' compresses most files more than bzip2. Decompression speed is intermediate between gzip and bzip2. Lzip provides better data recovery capabilities than gzip and bzip2. Lzip has been designed, written, and tested with great care to replace gzip and bzip2 as general-purpose compressed format for Unix-like systems.
+
+Plzip can compress/decompress large files on multiprocessor machines much faster than lzip, at the cost of a slightly reduced compression ratio (0.4 to 2 percent larger compressed files). Note that the number of usable threads is limited by file size; on files larger than a few GB plzip can use hundreds of processors, but on files of only a few MB plzip is no faster than lzip.
+
+For creation and manipulation of compressed tar archives tarlz can be more efficient than using tar and plzip because tarlz is able to keep the alignment between tar members and lzip members.
+
+When compressing, plzip divides the input file into chunks and compresses as many chunks simultaneously as worker threads are chosen, creating a multimember compressed file.
+
+When decompressing, plzip decompresses as many members simultaneously as worker threads are chosen. Files that were compressed with lzip are not decompressed faster than using lzip (unless the option '-b' was used) because lzip usually produces single-member files, which can't be decompressed in parallel.
+
+In this [plzip benchmark page](https://www.nongnu.org/lzip/plzip_benchmark.html) you can find some tests showing the performance of plzip on a multiprocessor machine.
 
