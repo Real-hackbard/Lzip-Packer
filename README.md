@@ -61,3 +61,8 @@ When decompressing, plzip decompresses as many members simultaneously as worker 
 In this [plzip benchmark page](https://www.nongnu.org/lzip/plzip_benchmark.html) you can find some tests showing the performance of plzip on a multiprocessor machine.
 
 The latest released version of plzip can be found [here](https://download.savannah.nongnu.org/releases/lzip/plzip/) Plzip requires lzlib to build. Lzlib is available at [http://www.nongnu.org/lzip/lzlib.html.](https://www.nongnu.org/lzip/lzlib.html) You may also subscribe to lzip-bug and receive an email every time a new version is released.
+
+# Bzip2
+bzip2 is not a [file archiver](https://en.wikipedia.org/wiki/File_archiver) and thus relies on separate external utilities such as tar for tasks such as handling multiple files, and other tools for encryption, and archive splitting.
+
+bzip2 was initially released in 1996 (originally named bzip) by [Julian Seward](https://en.wikipedia.org/wiki/Julian_Seward). It compresses most files more effectively than older LZW and Deflate compression algorithms but is slower. bzip2 is particularly efficient for text data, and decompression is relatively fast. The algorithm uses several layers of compression techniques, such as run-length encoding (RLE), Burrows–Wheeler transform (BWT), move-to-front transform (MTF), and Huffman coding. bzip2 compresses data in blocks between 100 and 900 kB and uses the Burrows–Wheeler transform to convert frequently recurring character sequences into strings of identical letters. The move-to-front transform and Huffman coding are then applied. The compression performance is asymmetric, with decompression being faster than compression.
