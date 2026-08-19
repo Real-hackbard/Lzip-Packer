@@ -111,6 +111,8 @@ Lzlib correctly decompresses a data stream which is the concatenation of two or 
 
 Lzlib is able to compress and decompress streams of unlimited size by automatically creating multimember output. The members so created are large, about 2 PiB each.
 
+### :link: Download
+
 The latest released version of lzlib can be found [here](https://download.savannah.nongnu.org/releases/lzip/lzlib/) You may also subscribe to lzip-bug and receive an email every time a new version is released.
 
 </br>
@@ -129,6 +131,8 @@ When compressing, plzip divides the input file into chunks and compresses as man
 When decompressing, plzip decompresses as many members simultaneously as worker threads are chosen. Files that were compressed with lzip are not decompressed faster than using lzip (unless the option '-b' was used) because lzip usually produces single-member files, which can't be decompressed in parallel.
 
 In this [plzip benchmark page](https://www.nongnu.org/lzip/plzip_benchmark.html) you can find some tests showing the performance of plzip on a multiprocessor machine.
+
+### :link: Download
 
 :link: The latest released version of plzip can be found [here](https://download.savannah.nongnu.org/releases/lzip/plzip/) Plzip requires lzlib to build. Lzlib is available at [http://www.nongnu.org/lzip/lzlib.html.](https://www.nongnu.org/lzip/lzlib.html) You may also subscribe to lzip-bug and receive an email every time a new version is released.
 
