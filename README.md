@@ -20,10 +20,10 @@ The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is 
 
 ### Compressors
 * Lzip (32bit) : ```Batch, Single pack```
-* pLzip (32bit) : Batch pack
-* pLzip (x64bit) : Batch pack
-* bzip2 (32bit) : Batch pack
-* gzip (32bit) : Batch, Single pack
+* pLzip (32bit) : ```Batch pack```
+* pLzip (x64bit) : ```Batch pack```
+* bzip2 (32bit) : ```Batch pack```
+* gzip (32bit) : ```Batch, Single pack```
 
 </br>
 
