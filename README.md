@@ -18,6 +18,13 @@ The file that is produced by lzip is usually given .lz as its filename extension
 
 The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is being distributed as free software under the terms of version 2 or later of the [GNU General Public License (GPL)](https://en.wikipedia.org/wiki/GNU_General_Public_License).
 
+### Compressor
+* Lzip (32bit) : Batch, Single pack
+* pLzip (32bit) : Batch pack
+* pLzip (x64bit) : Batch pack
+* bzip2 (32bit) : Batch pack
+* gzip (32bit) : Batch, Single pack
+
 </br>
 
 <img src="https://github.com/user-attachments/assets/0fb8634b-04a4-451d-92af-5f3540549771" />
