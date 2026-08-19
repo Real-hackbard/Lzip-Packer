@@ -30,54 +30,54 @@ The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is 
 WARNING! Even if lzip is bug-free, other causes may result in a corrupt compressed file (bugs in the system libraries, memory errors, etc). Therefore, if the data you are going to compress are important, give the option --keep to lzip and don't remove the original file until you check the compressed file with a command like 'lzip -cd file.lz | cmp file -'. Most RAM errors happening during compression can only be detected by comparing the compressed file with the original because the corruption happens before lzip compresses the RAM contents, resulting in a valid compressed file containing wrong data.
 
 
-Example 1: Extract all the files from archive foo.tar.lz.
+**Example 1:** Extract all the files from archive foo.tar.lz.
 
        tar -xf foo.tar.lz
      or
        lzip -cd foo.tar.lz | tar -xf -
 
-Example 2: Replace a regular file with its compressed version file.lz and show the compression ratio.
+**Example 2:** Replace a regular file with its compressed version file.lz and show the compression ratio.
 
      lzip -v file
 
-Example 3: Like example 2 but the created file.lz is multimember with a member size of 1 MiB. The compression ratio is not shown.
+**Example 3:** Like example 2 but the created file.lz is multimember with a member size of 1 MiB. The compression ratio is not shown.
 
      lzip -b 1MiB file
 
-Example 4: Restore a regular file from its compressed version file.lz. If the operation is successful, file.lz is removed.
+**Example 4:** Restore a regular file from its compressed version file.lz. If the operation is successful, file.lz is removed.
 
      lzip -d file.lz
 
-Example 5: Check the integrity of the compressed file file.lz and show status.
+**Example 5:** Check the integrity of the compressed file file.lz and show status.
 
      lzip -tv file.lz
 
-Example 6: The right way of concatenating the decompressed output of two or more compressed files. See Trailing data.
+**Example 6:** The right way of concatenating the decompressed output of two or more compressed files. See Trailing data.
 
      Don't do this
        cat file1.lz file2.lz file3.lz | lzip -d -
      Do this instead
        lzip -cd file1.lz file2.lz file3.lz
 
-Example 7: Decompress file.lz partially until 10 KiB of decompressed data are produced.
+**Example 7:** Decompress file.lz partially until 10 KiB of decompressed data are produced.
 
      lzip -cd file.lz | dd bs=1024 count=10
 
-Example 8: Decompress file.lz partially from decompressed byte at offset 10_000 to decompressed byte at offset 14_999 (5000 bytes are produced).
+**Example 8:** Decompress file.lz partially from decompressed byte at offset 10_000 to decompressed byte at offset 14_999 (5000 bytes are produced).
 
      lzip -cd file.lz | dd bs=1000 skip=10 count=5
 
-Example 9: Compress a whole device in /dev/sdc and send the output to file.lz.
+**Example 9:** Compress a whole device in /dev/sdc and send the output to file.lz.
 
        lzip -c /dev/sdc > file.lz
      or
        lzip /dev/sdc -o file.lz
 
-Example 10: Create a multivolume compressed tar archive with a volume size of 1440 KiB.
+**Example 10:** Create a multivolume compressed tar archive with a volume size of 1440 KiB.
 
      tar -c some_directory | lzip -S 1440KiB -o volume_name -
 
-Example 11: Extract a multivolume compressed tar archive.
+**Example 11:** Extract a multivolume compressed tar archive.
 
      lzip -cd volume_name*.lz | tar -xf -
 
