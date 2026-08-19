@@ -88,3 +88,15 @@ gzip is a file format and a file compression program. The program uses the Defla
 gzip was released in 1992 as a free software replacement for the compress program because its compression algorithm, LZW, was covered by patents from [Unisys](https://en.wikipedia.org/wiki/Unisys) and IBM,[4] which did not expire until 2003 and 2004. Jean-Loup Gailly designed the gzip file format,[6] which was later specified by RFC 1952, and originally wrote the gzip program. [Mark Adler](https://en.wikipedia.org/wiki/Mark_Adler) wrote the decompression part. gzip is now developed by the GNU project.
 
 As the file format can be decompressed via a [streaming algorithm](https://en.wikipedia.org/wiki/Streaming_algorithm), it is commonly used in stream-based technology such as Web protocols, data interchange and ETL (in standard pipes).
+
+### Download
+
+Download
+ 
+Description		Download		Size		Last change		Md5sum
+• Complete package, except sources	 	Setup	 	815096	 	15 October 2007	 	: ff19a6203e8111bedff29c3bc150eaf1  
+• Sources	 	Setup	 	684179	 	15 October 2007	 	: 71feb720f926cf9f231606ac34dea344  
+• Binaries	 	Zip	 	135350	 	15 October 2007	 	: b24802293f74ab11aaa5786f36c59819  
+• Documentation	 	Zip	 	461664	 	23 June 2007	 	: aa7564e3619ae00cea9197f562a444b8  
+• Sources	 	Zip	 	717550	 	15 October 2007	 	: 7c692445c3ed191d5807f19764144be0  
+• Original source		http://ftp.gnu.org/gnu/gzip/gzip-1.3.12.tar.gz
