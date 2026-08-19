@@ -27,7 +27,7 @@ The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is 
 
 # Lzip
 
-The functions and variables forming the interface of the compression library are declared in the file 'lzlib.h'. Usage examples of the library are given in the files 'bbexample.c', 'ffexample.c', and 'minilzip.c' from the source distribution.
+The functions and variables forming the interface of the compression library are declared in the file ```lzlib.h```. Usage examples of the library are given in the files ```bbexample.c```, ```ffexample.c```, and ```minilzip.c``` from the source distribution.
 
 All the library functions are thread safe. The library does not install any signal handler. The decoder checks the consistency of the compressed data, so the library should never crash even in case of corrupted input.
 
