@@ -20,10 +20,18 @@ The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is 
 
 </br>
 
-<img width="629" height="511" alt="Lzip" src="https://github.com/user-attachments/assets/0fb8634b-04a4-451d-92af-5f3540549771" />
+<img src="https://github.com/user-attachments/assets/0fb8634b-04a4-451d-92af-5f3540549771" />
 
 </br>
 </br>
+
+### Small tutorial & examples
+
+WARNING! Even if lzip is bug-free, other causes may result in a corrupt compressed file (bugs in the system libraries, memory errors, etc). Therefore, if the data you are going to compress are important, give the option --keep to lzip and don't remove the original file until you check the compressed file with a command like 'lzip -cd file.lz | cmp file -'. Most RAM errors happening during compression can only be detected by comparing the compressed file with the original because the corruption happens before lzip compresses the RAM contents, resulting in a valid compressed file containing wrong data.
+
+
+
+
 
 # Lzip
 
