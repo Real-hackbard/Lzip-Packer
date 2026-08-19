@@ -10,6 +10,14 @@
 
 </br>
 
+lzip is a free, [command-line tool](https://en.wikipedia.org/wiki/Command-line_interface) for the compression of data; it employs the [Lempel–Ziv–Markov chain algorithm](https://en.wikipedia.org/wiki/LZMA) (LZMA) with a user interface that is familiar to users of usual Unix compression tools, such as [gzip](https://en.wikipedia.org/wiki/Gzip) and [bzip2](https://en.wikipedia.org/wiki/Bzip2).
+
+Like gzip and bzip2, concatenation is supported to compress multiple files, but the convention is to bundle a file that is an archive itself, such as those created by the tar or cpio Unix programs. Lzip can split the output for the creation of multivolume archives.
+
+The file that is produced by lzip is usually given .lz as its filename extension, and the data is described by the media type application/lzip.
+
+The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is being distributed as free software under the terms of version 2 or later of the GNU General Public License (GPL).
+
 
 
 
