@@ -235,25 +235,37 @@ When compressing, set the match length limit in bytes. After a match this long i
 If -c has not been also specified, write the (de)compressed output to file, automatically creating any missing parent directories; keep input files unchanged. If compressing several files, each file is compressed independently. (The output consists of a sequence of independently compressed members). This option (or -c) is needed when reading from a named pipe (fifo) or from a device. -o - is equivalent to -c. -o has no effect when testing or listing.
 When compressing and splitting the output in volumes, file is used as a prefix, and several files named file00001.lz, file00002.lz, etc, are created. In this case, only one input file is allowed.
 
+```
 -q
 --quiet
+```
 Quiet operation. Suppress all messages.
+```
 -s bytes
 --dictionary-size=bytes
+```
 When compressing, set the dictionary size limit in bytes. Lzip uses for each file the largest dictionary size that does not exceed neither the file size nor this limit. Valid values range from 4 KiB to 512 MiB. Values 12 to 29 are interpreted as powers of two, meaning 2^12 to 2^29 bytes. Dictionary sizes are quantized so that they can be coded in just one byte (see coded dict size). If the size specified does not match one of the valid sizes, it is rounded upwards by adding up to (bytes / 8) to it.
 For maximum compression you should use a dictionary size limit as large as possible, but keep in mind that the decompression memory requirement is affected at compression time by the choice of dictionary size limit.
 
+```
 -S bytes
 --volume-size=bytes
+```
 When compressing, and -c has not been also specified, split the compressed output into several volume files with names original_name00001.lz, original_name00002.lz, etc, and set the volume size limit to bytes. Input files are kept unchanged. Each volume is a complete, maybe multimember, lzip file. A small volume size may degrade compression ratio, so use it only when needed. Valid values range from 100 kB to 4 EiB.
+```
 -t
 --test
+```
 Check integrity of the files specified, but don't decompress them. This really performs a trial decompression and throws away the result. Use it together with -v to see information about the files. If a file fails the test, does not exist, can't be opened, or is a terminal, lzip continues testing the rest of the files. A final diagnostic is shown at verbosity level 1 or higher if any file fails the test when testing multiple files. A multimember file with one or more empty members is accepted if redirected to standard input.
+```
 -v
 --verbose
+````
 Verbose mode.
 When compressing, show the compression ratio and size for each file processed.
 When decompressing or testing, further -v's (up to 4) increase the verbosity level, showing status, compression ratio, dictionary size, trailer contents (CRC, data size, member size), and up to 6 bytes of trailing data (if any) both in hexadecimal and as a string of printable ASCII characters.
 Two or more -v options show the progress of (de)compression.
+```
 -0 .. -9
+````
 Compression level. Set the compression parameters (dictionary size and match length limit) as shown in the table below. The default compression level is -6, equivalent to -s8MiB -m36. Note that -9 can be much slower than -0. These options have no effect when decompressing, testing, or listing.
