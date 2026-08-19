@@ -170,6 +170,8 @@ If no file names are specified, lzip compresses (or decompresses) from standard 
 
 lzip supports the following options: [See Argument syntax](https://www.nongnu.org/lzip/manual/lzip_manual.html#Argument-syntax).
 
+```The parameters apply to all Compressor versions.```
+
 ```
 -h
 ```  
