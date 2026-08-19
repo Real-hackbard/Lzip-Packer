@@ -18,7 +18,7 @@ The file that is produced by lzip is usually given .lz as its filename extension
 
 The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is being distributed as free software under the terms of version 2 or later of the [GNU General Public License (GPL)](https://en.wikipedia.org/wiki/GNU_General_Public_License).
 
-### Compressors
+### :wrench: Compressors
 * Lzip (32bit) : ```Batch, Single pack```
 * pLzip (32bit) : ```Batch pack```
 * pLzip (x64bit) : ```Batch pack```
@@ -32,7 +32,7 @@ The lzip suite of programs was written in C++ and C by Antonio Diaz Diaz and is 
 </br>
 </br>
 
-### Small tutorial & examples
+### :speech_balloon: Small tutorial & examples
 
 WARNING! Even if lzip is bug-free, other causes may result in a corrupt compressed file (bugs in the system libraries, memory errors, etc). Therefore, if the data you are going to compress are important, give the option --keep to lzip and don't remove the original file until you check the compressed file with a command like 'lzip -cd file.lz | cmp file -'. Most RAM errors happening during compression can only be detected by comparing the compressed file with the original because the corruption happens before lzip compresses the RAM contents, resulting in a valid compressed file containing wrong data.
 
@@ -130,7 +130,7 @@ When decompressing, plzip decompresses as many members simultaneously as worker 
 
 In this [plzip benchmark page](https://www.nongnu.org/lzip/plzip_benchmark.html) you can find some tests showing the performance of plzip on a multiprocessor machine.
 
-The latest released version of plzip can be found [here](https://download.savannah.nongnu.org/releases/lzip/plzip/) Plzip requires lzlib to build. Lzlib is available at [http://www.nongnu.org/lzip/lzlib.html.](https://www.nongnu.org/lzip/lzlib.html) You may also subscribe to lzip-bug and receive an email every time a new version is released.
+:link: The latest released version of plzip can be found [here](https://download.savannah.nongnu.org/releases/lzip/plzip/) Plzip requires lzlib to build. Lzlib is available at [http://www.nongnu.org/lzip/lzlib.html.](https://www.nongnu.org/lzip/lzlib.html) You may also subscribe to lzip-bug and receive an email every time a new version is released.
 
 </br>
 
@@ -139,7 +139,7 @@ bzip2 is not a [file archiver](https://en.wikipedia.org/wiki/File_archiver) and 
 
 bzip2 was initially released in 1996 (originally named bzip) by [Julian Seward](https://en.wikipedia.org/wiki/Julian_Seward). It compresses most files more effectively than older [LZW](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch) and Deflate compression algorithms but is slower. bzip2 is particularly efficient for text data, and decompression is relatively fast. The algorithm uses several layers of compression techniques, such as run-length encoding (RLE), Burrows–Wheeler transform (BWT), move-to-front transform (MTF), and [Huffman](https://en.wikipedia.org/wiki/Huffman_coding) coding. bzip2 compresses data in blocks between 100 and 900 kB and uses the Burrows–Wheeler transform to convert frequently recurring character sequences into strings of identical letters. The move-to-front transform and Huffman coding are then applied. The compression performance is asymmetric, with decompression being faster than compression.
 
-### Download
+### :link: Download
 
 Description		Download		Size		Last change		Md5sum  
 • Complete package, except sources	 	[Setup](https://sourceforge.net/projects/gnuwin32/files/bzip2/1.0.5/bzip2-1.0.5-setup.exe/download?use_mirror=deac-riga&download)	 	828397	 	20 March 2008	 	: ddea95e9a0920c88051b4e3071e0b9b7  
@@ -159,7 +159,7 @@ gzip was released in 1992 as a free software replacement for the compress progra
 
 As the file format can be decompressed via a [streaming algorithm](https://en.wikipedia.org/wiki/Streaming_algorithm), it is commonly used in stream-based technology such as Web protocols, data interchange and ETL (in standard pipes).
 
-### Download
+### :link: Download
  
 Description		Download		Size		Last change		Md5sum  
 • Complete package, except sources	 	[Setup](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-setup.exe/download?use_mirror=deac-fra&download)	 	815096	 	15 October 2007	 	: ff19a6203e8111bedff29c3bc150eaf1  
@@ -171,7 +171,7 @@ Description		Download		Size		Last change		Md5sum
 
 </br>
 
-# Parameters
+# :wrench: Parameters
 
 If no file names are specified, lzip compresses (or decompresses) from standard input to standard output. A hyphen '-' used as a file argument means standard input. It can be mixed with other files and is read just once, the first time it appears in the command line. Remember to prepend ./ to any file name beginning with a hyphen, or use '--'. It is the responsibility of the caller to check that the file names in the command line are valid. (For example, that they do not contain unprintable characters).
 
