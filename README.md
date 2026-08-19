@@ -62,6 +62,8 @@ In this [plzip benchmark page](https://www.nongnu.org/lzip/plzip_benchmark.html)
 
 The latest released version of plzip can be found [here](https://download.savannah.nongnu.org/releases/lzip/plzip/) Plzip requires lzlib to build. Lzlib is available at [http://www.nongnu.org/lzip/lzlib.html.](https://www.nongnu.org/lzip/lzlib.html) You may also subscribe to lzip-bug and receive an email every time a new version is released.
 
+</br>
+
 # Bzip2
 bzip2 is not a [file archiver](https://en.wikipedia.org/wiki/File_archiver) and thus relies on separate external utilities such as tar for tasks such as handling multiple files, and other tools for encryption, and archive splitting.
 
@@ -77,3 +79,12 @@ Description		Download		Size		Last change		Md5sum
 • Documentation	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/bzip2/1.0.5/bzip2-1.0.5-doc.zip/download?use_mirror=master&download)	 	574603	 	20 March 2008	 	: 3374f2d968ebcee4b8f0c0073d6ad680  
 • Sources	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/bzip2/1.0.5/bzip2-1.0.5-src.zip/download?use_mirror=master&download)	 	416587	 	20 March 2008	 	: 6db7a1af112189d060ac0a538199ff06  
 • Original source		http://www.bzip.org/1.0.5/bzip2-1.0.5.tar.gz
+
+</br>
+
+# Gzip
+gzip is a file format and a file compression program. The program uses the Deflate algorithm to compress and decompress a single file using the [gzip file format](https://en.wikipedia.org/wiki/Gzip#File_format).
+
+gzip was released in 1992 as a free software replacement for the compress program because its compression algorithm, LZW, was covered by patents from Unisys and IBM,[4] which did not expire until 2003 and 2004. Jean-Loup Gailly designed the gzip file format,[6] which was later specified by RFC 1952, and originally wrote the gzip program. Mark Adler wrote the decompression part. gzip is now developed by the GNU project.
+
+As the file format can be decompressed via a streaming algorithm, it is commonly used in stream-based technology such as Web protocols, data interchange and ETL (in standard pipes).
