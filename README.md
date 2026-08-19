@@ -66,3 +66,15 @@ The latest released version of plzip can be found [here](https://download.savann
 bzip2 is not a [file archiver](https://en.wikipedia.org/wiki/File_archiver) and thus relies on separate external utilities such as tar for tasks such as handling multiple files, and other tools for encryption, and archive splitting.
 
 bzip2 was initially released in 1996 (originally named bzip) by [Julian Seward](https://en.wikipedia.org/wiki/Julian_Seward). It compresses most files more effectively than older [LZW](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch) and Deflate compression algorithms but is slower. bzip2 is particularly efficient for text data, and decompression is relatively fast. The algorithm uses several layers of compression techniques, such as run-length encoding (RLE), Burrows–Wheeler transform (BWT), move-to-front transform (MTF), and [Huffman](https://en.wikipedia.org/wiki/Huffman_coding) coding. bzip2 compresses data in blocks between 100 and 900 kB and uses the Burrows–Wheeler transform to convert frequently recurring character sequences into strings of identical letters. The move-to-front transform and Huffman coding are then applied. The compression performance is asymmetric, with decompression being faster than compression.
+
+### Download
+
+Description		Download		Size		Last change		Md5sum  
+• Complete package, except sources	 	[Setup](https://sourceforge.net/projects/gnuwin32/files/bzip2/1.0.5/bzip2-1.0.5-setup.exe/download?use_mirror=deac-riga&download)	 	828397	 	20 March 2008	 	ddea95e9a0920c88051b4e3071e0b9b7  
+• Sources	 	[Setup](https://sourceforge.net/projects/gnuwin32/files/bzip2/1.0.5/bzip2-1.0.5-src-setup.exe/download?use_mirror=master&download)	 	612147	 	20 March 2008	 	f0719946c2af47a675c8eaa3a9408a96  
+ 
+• Binaries	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/bzip2/1.0.5/bzip2-1.0.5-bin.zip/download?use_mirror=deac-fra&download)	 	158416	 	20 March 2008	 	a1155c41b1954a2f6da1014c7c1a1263  
+• Developer files	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/bzip2/1.0.5/bzip2-1.0.5-lib.zip/download?use_mirror=master&download)	 	36170	 	20 March 2008	 	795cd55e072d6e31b3ad00707994f566  
+• Documentation	 	Zip	 	574603	 	20 March 2008	 	3374f2d968ebcee4b8f0c0073d6ad680  
+• Sources	 	Zip	 	416587	 	20 March 2008	 	6db7a1af112189d060ac0a538199ff06  
+• Original source		http://www.bzip.org/1.0.5/bzip2-1.0.5.tar.gz
