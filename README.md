@@ -176,7 +176,9 @@ lzip supports the following options: [See Argument syntax](https://www.nongnu.or
 -h
 ```  
 Print an informative help message describing the options and exit.
-```--help```  
+```
+--help
+```  
 Print the full help and exit.
 ```
 -V
