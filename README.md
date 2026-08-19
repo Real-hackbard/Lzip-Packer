@@ -90,8 +90,6 @@ gzip was released in 1992 as a free software replacement for the compress progra
 As the file format can be decompressed via a [streaming algorithm](https://en.wikipedia.org/wiki/Streaming_algorithm), it is commonly used in stream-based technology such as Web protocols, data interchange and ETL (in standard pipes).
 
 ### Download
-
-Download
  
 Description		Download		Size		Last change		Md5sum  
 • Complete package, except sources	 	[Setup](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-setup.exe/download?use_mirror=deac-fra&download)	 	815096	 	15 October 2007	 	: ff19a6203e8111bedff29c3bc150eaf1  
