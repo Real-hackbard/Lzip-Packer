@@ -161,3 +161,11 @@ Description		Download		Size		Last change		Md5sum
 • Documentation	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-doc.zip/download?use_mirror=master&download)	 	461664	 	23 June 2007	 	: aa7564e3619ae00cea9197f562a444b8  
 • Sources	 	[Zip](https://sourceforge.net/projects/gnuwin32/files/gzip/1.3.12-1/gzip-1.3.12-1-src.zip/download?use_mirror=excellmedia&download)	 	717550	 	15 October 2007	 	: 7c692445c3ed191d5807f19764144be0  
 • Original source		http://ftp.gnu.org/gnu/gzip/gzip-1.3.12.tar.gz
+
+</br>
+
+# Parameters
+
+If no file names are specified, lzip compresses (or decompresses) from standard input to standard output. A hyphen '-' used as a file argument means standard input. It can be mixed with other files and is read just once, the first time it appears in the command line. Remember to prepend ./ to any file name beginning with a hyphen, or use '--'. It is the responsibility of the caller to check that the file names in the command line are valid. (For example, that they do not contain unprintable characters).
+
+lzip supports the following options: [See Argument syntax](https://www.nongnu.org/lzip/manual/lzip_manual.html#Argument-syntax).
