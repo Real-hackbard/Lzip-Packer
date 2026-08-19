@@ -14,11 +14,3 @@
 
 
 
-
-
-
-
-
-
-
-<img width="73" height="20" alt="Lzip Packer" src="https://github.com/user-attachments/assets/413d2c44-497d-48c8-b1ba-58d73283106d" />
