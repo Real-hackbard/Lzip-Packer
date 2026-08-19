@@ -88,7 +88,7 @@ WARNING! Even if lzip is bug-free, other causes may result in a corrupt compress
 
      lzip -cd volume_name*.lz | tar -xf -
 
-Example 12: Create a multivolume compressed backup of a large database file with a volume size of 650 MB, where each volume is a multimember file with a member size of 32 MiB.
+**Example 12:** Create a multivolume compressed backup of a large database file with a volume size of 650 MB, where each volume is a multimember file with a member size of 32 MiB.
 
      lzip -b 32MiB -S 650MB big_db
 
