@@ -85,6 +85,6 @@ Description		Download		Size		Last change		Md5sum
 # Gzip
 gzip is a file format and a file compression program. The program uses the Deflate algorithm to compress and decompress a single file using the [gzip file format](https://en.wikipedia.org/wiki/Gzip#File_format).
 
-gzip was released in 1992 as a free software replacement for the compress program because its compression algorithm, LZW, was covered by patents from Unisys and IBM,[4] which did not expire until 2003 and 2004. Jean-Loup Gailly designed the gzip file format,[6] which was later specified by RFC 1952, and originally wrote the gzip program. Mark Adler wrote the decompression part. gzip is now developed by the GNU project.
+gzip was released in 1992 as a free software replacement for the compress program because its compression algorithm, LZW, was covered by patents from [Unisys](https://en.wikipedia.org/wiki/Unisys) and IBM,[4] which did not expire until 2003 and 2004. Jean-Loup Gailly designed the gzip file format,[6] which was later specified by RFC 1952, and originally wrote the gzip program. [Mark Adler](https://en.wikipedia.org/wiki/Mark_Adler) wrote the decompression part. gzip is now developed by the GNU project.
 
 As the file format can be decompressed via a streaming algorithm, it is commonly used in stream-based technology such as Web protocols, data interchange and ETL (in standard pipes).
